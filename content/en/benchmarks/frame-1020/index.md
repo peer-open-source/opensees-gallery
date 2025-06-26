@@ -19,7 +19,7 @@ load pattern to the current [`Model`](https://xara.so/user/manual/model/model_cl
 labeled with the tag `1` and scaled in time by a `Linear` time series:
 
 ```python
-    model.pattern("Plain", 1, "Linear")
+model.pattern("Plain", 1, "Linear")
 ```
 
 Next we add a [`FrameLoad`](https://xara.so/user/manual/model/elements/frame/FrameLoad.html)

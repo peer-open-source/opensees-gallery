@@ -1,13 +1,15 @@
 # Linear Elastic Planar Shear Walls
 
-#REFERENCES:
+# REFERENCES:
+#
 # 1) ETABS Software Verification Examples, Computers and Structures, Inc, 2003 (Example 15A)
 
 puts "PlanarShearWall.tcl: Verification of Linear Elastic Planar Shear Wall"
 
-# Multiple Shear Wall building models with lengths of 120",240" and 360" lengths. Buildings of 1 story, 3 Story and
+# Multiple Shear Wall building models with lengths of 120", 240" and 360" lengths. Buildings of 1 story, 3 Story and
 # 6 story are modelled. Each buildings story height is 120" All walls 12". All materials elastic with modulus of elasticity
-# of 3000 ksi and poisson's ration of 0.2. At each floor in the buildings all nodes at the floor level are constrained to
+# of 3000 ksi and poisson's ration of 0.2. 
+# At each floor in the buildings all nodes at the floor level are constrained to
 # move horizontally together.
 #
 # Loading: For each building a 100k load is applied at top left node.
@@ -22,7 +24,7 @@ set resultsSAP   {2.4287 0.1031 0.0186 0.3205 0.0187 0.0052 0.0185 0.0029 0.0013
 set resultsETABS {2.3926 0.0985 0.0172 0.3068 0.0169 0.0046 0.0144 0.0024 0.0011}
 
 set Algorithm Newton
-set System    "SparseGEN"; #"TProfileSPD Thread"; #4 1" ; #SparseGEN
+set System    "Umfpack"; #"TProfileSPD Thread"; #4 1" ; #SparseGEN
 
 # wall properties
 set E 3000.
@@ -46,7 +48,7 @@ set nyFloor 16
 # QUAD
 # {quad SSPquad}
 
-if 0 {
+if 1 {
 foreach eleType {quad enhancedQuad} {
 
     set counter 0
@@ -127,7 +129,7 @@ foreach eleType {quad enhancedQuad} {
 # {ShellDKGQ ShellNLDKGQ}
 #
 if 1 {
-foreach eleType {ShellMITC4} {
+foreach eleType {ShellMITC4 ASDShellQ4} {
   # Shell
   puts "\n:: Using '$eleType' element"
 
@@ -214,7 +216,7 @@ foreach eleType {ShellMITC4} {
 # Brick
 #
 #  SSPbrick
-if 0 {
+if 1 {
 foreach eleType {stdBrick SSPbrick} {
     set counter 0
 
@@ -258,7 +260,7 @@ foreach eleType {stdBrick SSPbrick} {
 
             eval $blockCmd
 
-            # add some loads
+            #
             pattern Plain 1 Linear {
                 load $nodeTop  50.0  0.0  0.0
                 load [expr $nodeTop + ($nx+1)*($ny+1)]  50.0  0.0  0.0
@@ -307,12 +309,12 @@ foreach eleType {stdBrick SSPbrick} {
 }
 
 
-set results [open STATUS.md a+]
+#set results [open STATUS.md a+]
 if {$testOK == 0} {
     puts "\nPASSED Verification Test PlanarShearWall.tcl \n\n"
-    puts $results "| PASSED |  PlanarShearWall.tcl"
+#   puts $results "| PASSED |  PlanarShearWall.tcl"
 } else {
     puts "\nFAILED Verification Test PlanarShearWall.tcl \n\n"
-    puts $results "FAILED : PlanarShearWall.tcl"
+#   puts $results "FAILED : PlanarShearWall.tcl"
 }
-close $results
+#close $results

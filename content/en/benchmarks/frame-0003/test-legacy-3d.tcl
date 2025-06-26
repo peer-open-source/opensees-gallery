@@ -29,7 +29,7 @@ set wx 2.0
 
 set nIP 5
 
-set elements {1 2 3 5 7} ; # 6 4 (TODO) 
+set elements {1 2 3 5 6 7} ; # 6 4 (TODO) 
 
 proc printRow {quantity expected computed} {
   verify error $computed $expected 2e-2 $quantity

@@ -1,5 +1,5 @@
 ---
-title: 0102 - Cantilever with transverse loading (Postbuckling)
+title: "1002 - Cantilever with transverse loading (Postbuckling)"
 thumbnail: img/benchmarks/frame-1002.png
 description: >-
     In this case the cantilever beam is subjected only to a transverse force

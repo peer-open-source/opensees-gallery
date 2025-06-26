@@ -367,7 +367,7 @@ def analyze(model):
     # Perform 2000 analysis steps with a time step of 0.01
     for i in range(2000):
         status = model.analyze(1, 0.01)
-        if status != ops.successful:
+        if status != 0: #ops.successful:
             raise RuntimeError(f"analysis failed at time {model.getTime()}")
 
         # Save displacements at the current time

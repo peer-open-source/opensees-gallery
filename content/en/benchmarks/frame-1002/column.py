@@ -2,7 +2,8 @@
 # Cantilever
 #
 import os
-from shps.shapes import WideFlange
+import time
+from xsection.library import WideFlange
 import opensees.openseespy as ops
 
 # External libraries
@@ -13,9 +14,9 @@ import matplotlib.pyplot as plt
 def create_cantilever(shape,
                       slenderness,
                       element,
-                      section, 
-                      transform="Rigid", 
-                      shear=0, 
+                      section,
+                      transform="Rigid",
+                      shear=0,
                       ne=8):
 
     E = 29e3 # ksi
@@ -98,7 +99,10 @@ def analyze(model):
     ux = []
     uy = []
     P  = []
+    ni = []
     L  = shape.d/slenderness
+
+    start = time.time()
     while model.getTime() < Mmax:
         ux.append(1+model.nodeDisp(end, 1)/L)
         uy.append(  model.nodeDisp(end, 2)/L)
@@ -106,7 +110,10 @@ def analyze(model):
         if model.analyze(1) != 0:
             print(f"Failed at time = {model.getTime()/Mmax}")
             break
+        ni.append(model.numIter())
 
+    end = time.time()
+    print(f"{end - start}\t{sum(ni)/len(ni)}")
 
     return ux, uy, P
 
@@ -146,7 +153,7 @@ if __name__ == "__main__":
                                 section = os.environ.get("Section", "ShearFiber"),
                                 element = os.environ.get("Element", "PrismFrame"),
                                 transform=transform)
-        
+
         ux, uy, P = analyze(model)
 
 

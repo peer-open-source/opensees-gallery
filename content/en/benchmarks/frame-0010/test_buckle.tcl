@@ -2,42 +2,30 @@ wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
-fix 1 1 1 1 1 1 0 
-getNDF  
+fix  1 1 1 1 1 1 0 
 fix 11 1 0 1 1 1 0 
+
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 
 geomTransf Corotational 1 0 0 1 
 element PrismFrame 1 1 2 -section 1 -transform 1 -order 0 -shear 0
@@ -56,350 +44,236 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
+
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 0 
-getNDF  
 fix 11 1 0 1 1 1 0 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 
 geomTransf Corotational 1 0 0 1 
@@ -419,347 +293,234 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
+
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 0 
-getNDF  
 fix 11 1 0 1 1 1 0 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 -Ay 56.0 -G 11200.0 -Az 56.0 
 geomTransf Corotational 1 0 0 1 
@@ -779,353 +540,237 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 0 
-getNDF  
 fix 11 1 0 1 1 1 0 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 -Ay 56.0 -G 11200.0 -Az 56.0 
 geomTransf Corotational 1 0 0 1 
@@ -1145,350 +790,235 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 1 
-getNDF  
 fix 11 0 0 1 1 1 1 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 
 geomTransf Corotational 1 0 0 1 
@@ -1508,350 +1038,235 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 1 
-getNDF  
 fix 11 0 0 1 1 1 1 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 
 geomTransf Corotational 1 0 0 1 
@@ -1871,347 +1286,233 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 1 
-getNDF  
 fix 11 0 0 1 1 1 1 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 -Ay 56.0 -G 11200.0 -Az 56.0 
 geomTransf Corotational 1 0 0 1 
@@ -2231,353 +1532,237 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 1 
-getNDF  
 fix 11 0 0 1 1 1 1 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 -Ay 56.0 -G 11200.0 -Az 56.0 
 geomTransf Corotational 1 0 0 1 
@@ -2597,350 +1782,235 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 1 
-getNDF  
 fix 11 1 0 1 1 1 1 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 
 geomTransf Corotational 1 0 0 1 
@@ -2960,353 +2030,237 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 1 
-getNDF  
 fix 11 1 0 1 1 1 1 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 
 geomTransf Corotational 1 0 0 1 
@@ -3326,344 +2280,231 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 1 
-getNDF  
 fix 11 1 0 1 1 1 1 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 -Ay 56.0 -G 11200.0 -Az 56.0 
 geomTransf Corotational 1 0 0 1 
@@ -3683,371 +2524,249 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 1 
-getNDF  
 fix 11 1 0 1 1 1 1 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 -Ay 56.0 -G 11200.0 -Az 56.0 
 geomTransf Corotational 1 0 0 1 
@@ -4067,359 +2786,241 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 1 
-getNDF  
 fix 11 1 0 1 1 1 0 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 
 geomTransf Corotational 1 0 0 1 
@@ -4439,350 +3040,235 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 1 
-getNDF  
 fix 11 1 0 1 1 1 0 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 
 geomTransf Corotational 1 0 0 1 
@@ -4802,344 +3288,231 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 1 
-getNDF  
 fix 11 1 0 1 1 1 0 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 -Ay 56.0 -G 11200.0 -Az 56.0 
 geomTransf Corotational 1 0 0 1 
@@ -5159,359 +3532,241 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 1 
-getNDF  
 fix 11 1 0 1 1 1 0 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 -Ay 56.0 -G 11200.0 -Az 56.0 
 geomTransf Corotational 1 0 0 1 
@@ -5531,356 +3786,239 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 1 
-getNDF  
 fix 11 0 0 1 1 1 0 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 
 geomTransf Corotational 1 0 0 1 
@@ -5900,350 +4038,235 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 1 
-getNDF  
 fix 11 0 0 1 1 1 0 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 
 geomTransf Corotational 1 0 0 1 
@@ -6263,347 +4286,233 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 1 
-getNDF  
 fix 11 0 0 1 1 1 0 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 -Ay 56.0 -G 11200.0 -Az 56.0 
 geomTransf Corotational 1 0 0 1 
@@ -6623,350 +4532,235 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 1 
-getNDF  
 fix 11 0 0 1 1 1 0 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 -Ay 56.0 -G 11200.0 -Az 56.0 
 geomTransf Corotational 1 0 0 1 
@@ -6986,350 +4780,235 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 0 
-getNDF  
 fix 11 0 0 1 1 1 1 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 
 geomTransf Corotational 1 0 0 1 
@@ -7349,350 +5028,235 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 0 
-getNDF  
 fix 11 0 0 1 1 1 1 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 
 geomTransf Corotational 1 0 0 1 
@@ -7712,347 +5276,233 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 0 
-getNDF  
 fix 11 0 0 1 1 1 1 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 -Ay 56.0 -G 11200.0 -Az 56.0 
 geomTransf Corotational 1 0 0 1 
@@ -8072,350 +5522,235 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 0 
-getNDF  
 fix 11 0 0 1 1 1 1 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 -Ay 56.0 -G 11200.0 -Az 56.0 
 geomTransf Corotational 1 0 0 1 
@@ -8435,350 +5770,235 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 0 
-getNDF  
 fix 11 1 0 1 1 1 0 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 
 geomTransf Corotational 1 0 0 1 
@@ -8798,353 +6018,237 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 0 
-getNDF  
 fix 11 1 0 1 1 1 0 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 
 geomTransf Corotational 1 0 0 1 
@@ -9164,350 +6268,235 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 0 
-getNDF  
 fix 11 1 0 1 1 1 0 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 -Ay 56.0 -G 11200.0 -Az 56.0 
 geomTransf Corotational 1 0 0 1 
@@ -9527,353 +6516,237 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 0 
-getNDF  
 fix 11 1 0 1 1 1 0 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 -Ay 56.0 -G 11200.0 -Az 56.0 
 geomTransf Corotational 1 0 0 1 
@@ -9893,353 +6766,237 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 1 
-getNDF  
 fix 11 0 0 1 1 1 1 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 
 geomTransf Corotational 1 0 0 1 
@@ -10259,353 +7016,237 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 1 
-getNDF  
 fix 11 0 0 1 1 1 1 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 
 geomTransf Corotational 1 0 0 1 
@@ -10625,350 +7266,235 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 1 
-getNDF  
 fix 11 0 0 1 1 1 1 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 -Ay 56.0 -G 11200.0 -Az 56.0 
 geomTransf Corotational 1 0 0 1 
@@ -10988,353 +7514,237 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 1 
-getNDF  
 fix 11 0 0 1 1 1 1 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 -Ay 56.0 -G 11200.0 -Az 56.0 
 geomTransf Corotational 1 0 0 1 
@@ -11354,347 +7764,233 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 1 
-getNDF  
 fix 11 1 0 1 1 1 1 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 
 geomTransf Corotational 1 0 0 1 
@@ -11714,362 +8010,243 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 1 
-getNDF  
 fix 11 1 0 1 1 1 1 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 
 geomTransf Corotational 1 0 0 1 
@@ -12089,353 +8266,237 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 1 
-getNDF  
 fix 11 1 0 1 1 1 1 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 -Ay 56.0 -G 11200.0 -Az 56.0 
 geomTransf Corotational 1 0 0 1 
@@ -12455,371 +8516,249 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 1 
-getNDF  
 fix 11 1 0 1 1 1 1 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 -Ay 56.0 -G 11200.0 -Az 56.0 
 geomTransf Corotational 1 0 0 1 
@@ -12839,362 +8778,247 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
+
+#
+#
+#
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 1 
-getNDF  
 fix 11 1 0 1 1 1 0 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 
 geomTransf Corotational 1 0 0 1 
@@ -13214,356 +9038,239 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 1 
-getNDF  
 fix 11 1 0 1 1 1 0 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 
 geomTransf Corotational 1 0 0 1 
@@ -13583,350 +9290,235 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 1 
-getNDF  
 fix 11 1 0 1 1 1 0 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 -Ay 56.0 -G 11200.0 -Az 56.0 
 geomTransf Corotational 1 0 0 1 
@@ -13946,359 +9538,241 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 1 
-getNDF  
 fix 11 1 0 1 1 1 0 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 -Ay 56.0 -G 11200.0 -Az 56.0 
 geomTransf Corotational 1 0 0 1 
@@ -14318,356 +9792,239 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 1 
-getNDF  
 fix 11 0 0 1 1 1 0 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 
 geomTransf Corotational 1 0 0 1 
@@ -14687,350 +10044,235 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 1 
-getNDF  
 fix 11 0 0 1 1 1 0 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 
 geomTransf Corotational 1 0 0 1 
@@ -15050,350 +10292,235 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 1 
-getNDF  
 fix 11 0 0 1 1 1 0 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 -Ay 56.0 -G 11200.0 -Az 56.0 
 geomTransf Corotational 1 0 0 1 
@@ -15413,350 +10540,235 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 1 
-getNDF  
 fix 11 0 0 1 1 1 0 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 -Ay 56.0 -G 11200.0 -Az 56.0 
 geomTransf Corotational 1 0 0 1 
@@ -15776,347 +10788,233 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 0 
-getNDF  
 fix 11 0 0 1 1 1 1 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 
 geomTransf Corotational 1 0 0 1 
@@ -16136,350 +11034,235 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 0 
-getNDF  
 fix 11 0 0 1 1 1 1 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 
 geomTransf Corotational 1 0 0 1 
@@ -16499,350 +11282,235 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 0 
-getNDF  
 fix 11 0 0 1 1 1 1 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 -Ay 56.0 -G 11200.0 -Az 56.0 
 geomTransf Corotational 1 0 0 1 
@@ -16862,350 +11530,235 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 0 
-getNDF  
 fix 11 0 0 1 1 1 1 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 -Ay 56.0 -G 11200.0 -Az 56.0 
 geomTransf Corotational 1 0 0 1 
@@ -17225,347 +11778,233 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 0 
-getNDF  
 fix 11 1 0 1 1 1 0 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 -Ay 56.0 -G 11200.0 -Az 56.0 
 geomTransf Corotational 1 0 0 1 
@@ -17585,356 +12024,239 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 1 
-getNDF  
 fix 11 0 0 1 1 1 1 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 -Ay 56.0 -G 11200.0 -Az 56.0 
 geomTransf Corotational 1 0 0 1 
@@ -17954,356 +12276,239 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 1 
-getNDF  
 fix 11 1 0 1 1 1 1 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 -Ay 56.0 -G 11200.0 -Az 56.0 
 geomTransf Corotational 1 0 0 1 
@@ -18323,380 +12528,255 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 1 
-getNDF  
 fix 11 1 0 1 1 1 0 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 -Ay 56.0 -G 11200.0 -Az 56.0 
 geomTransf Corotational 1 0 0 1 
@@ -18716,365 +12796,245 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 1 
-getNDF  
 fix 11 0 0 1 1 1 0 
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 -Ay 56.0 -G 11200.0 -Az 56.0 
 geomTransf Corotational 1 0 0 1 
@@ -19094,351 +13054,237 @@ test EnergyIncr 1e-08 20 9
 algorithm Newton 
 integrator LoadControl 0.01 
 analysis Static 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
 pragma openseespy
 model  -ndm 3
 node 1 0.0 0.0 0.0 
-getNDF  
 mass 1 1.0 1.0 1.0 1.0 1.0 1.0 
 node 2 0.0 6.0 0.0 
-getNDF  
 mass 2 1.0 1.0 1.0 1.0 1.0 1.0 
 node 3 0.0 12.0 0.0 
-getNDF  
 mass 3 1.0 1.0 1.0 1.0 1.0 1.0 
 node 4 0.0 18.0 0.0 
-getNDF  
 mass 4 1.0 1.0 1.0 1.0 1.0 1.0 
 node 5 0.0 24.0 0.0 
-getNDF  
 mass 5 1.0 1.0 1.0 1.0 1.0 1.0 
 node 6 0.0 30.0 0.0 
-getNDF  
 mass 6 1.0 1.0 1.0 1.0 1.0 1.0 
 node 7 0.0 36.0 0.0 
-getNDF  
 mass 7 1.0 1.0 1.0 1.0 1.0 1.0 
 node 8 0.0 42.0 0.0 
-getNDF  
 mass 8 1.0 1.0 1.0 1.0 1.0 1.0 
 node 9 0.0 48.0 0.0 
-getNDF  
 mass 9 1.0 1.0 1.0 1.0 1.0 1.0 
 node 10 0.0 54.0 0.0 
-getNDF  
 mass 10 1.0 1.0 1.0 1.0 1.0 1.0 
 node 11 0.0 60.0 0.0 
-getNDF  
 mass 11 1.0 1.0 1.0 1.0 1.0 1.0 
-getNDF  
 fix 1 1 1 1 1 1 0 
-getNDF  
 fix 11 0 0 1 1 1 1 
+
 section FrameElastic 1 29000.0 112.0 110.0 220.0 -J 11000.0 -G 11200.0 -Ay 56.0 -G 11200.0 -Az 56.0 
 geomTransf Corotational 1 0 0 1 
 element ExactFrame 1 1 2 -section 1 -transform 1 -order 1 -shear 1
@@ -19456,311 +13302,210 @@ nodalLoad 11 0.0 -2178.796342588359 0.0 0 0 0 -pattern 1
 test EnergyIncr 1e-08 20 9 
 algorithm Newton 
 integrator LoadControl 0.01 
-analysis Static 
-getTime  
+analysis Static
+
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 analyze 1 
-getTime  
 eigen 1 
 wipe
-pragma openseespy
+

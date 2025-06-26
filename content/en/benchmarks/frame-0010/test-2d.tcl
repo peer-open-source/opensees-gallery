@@ -94,6 +94,6 @@ proc euler_buckling {
   }
 }
 
-euler_buckling
+euler_buckling forceBeamColumn Corotational
 # euler_buckling PrismFrame
 

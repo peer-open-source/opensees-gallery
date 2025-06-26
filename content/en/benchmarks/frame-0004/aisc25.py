@@ -1,4 +1,5 @@
 import numpy as np
+import aisc25
 
 class Column:
     def __init__(self, E, I, L, H, Pr, w=None):
@@ -13,13 +14,17 @@ class Column:
         pass 
 
 class Case1:
+    # Cantilever with tip loads
     def __init__(self, E, I, L, H, Pr):
-        lam = (np.pi / 2) * np.sqrt(Pr / ((np.pi**2 * E * I) / L**2))
+        Pe = (np.pi**2 * E * I) / L**2
+        self.Pe = Pe
+        lam = (np.pi / 2) * np.sqrt(Pr / Pe)
         self.u = (H * L**3 / (3 * E * I)) * (3 * (np.tan(2 * lam) - 2 * lam) / (2 * lam)**3)
         self.M = H * L * (np.tan(2 * lam) / (2 * lam))
         self.xu = L
 
 class Case2:
+    # 
     def __init__(self, E, I, L, H, Pr):
         lam = (np.pi / 2) * np.sqrt(Pr / ((np.pi**2 * E * I) / L**2))
         self.u = (H * L**3 / (12 * E * I)) * (3 * (np.tan(lam) - lam) / lam**3)

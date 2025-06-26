@@ -1,5 +1,5 @@
 ---
-title: Finite Rotations
+title: "1001 - Finite Rotations"
 description: This problem highlights the exceptional accuracy of the ExactFrame formulation for simulating large deformations
 thumbnail: img/examples/FrameCircle.png
 bibliography: references.json
