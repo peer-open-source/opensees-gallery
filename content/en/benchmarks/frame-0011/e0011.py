@@ -1,11 +1,13 @@
 # Test of the warping DOF
 # Linear 7-DOF analysis of a cantilever subjected to a torque
+#
 import os
 import sys
 
 import veux
 from veux.motion import Motion
 from xsection.library import WideFlange, HollowRectangle, Channel, Rectangle, Circle
+
 import opensees.openseespy as ops
 
 # External libraries
@@ -31,7 +33,7 @@ def create_cantilever(aspect,
     nen = 2
     nn = ne*(nen-1)+1
 
-    model = ops.Model(ndm=3, ndf=7) #, echo_file=open(f"test-{case}-{element[:5]}.tcl", "w+"))
+    model = ops.Model(ndm=3, ndf=7)
 
     model.eval(f"set E {E}")
     model.eval(f"set G {G}")
@@ -43,11 +45,11 @@ def create_cantilever(aspect,
 
 
     if section == "Elastic":
-        cmm = shape.torsion.cmm()
-        cnn = shape.torsion.cnn()
-        cnv = shape.torsion.cnv()
-        cnm = shape.torsion.cnm()
-        cmw = shape.torsion.cmw()
+        cmm = shape.cmm()
+        cnn = shape.cnn()
+        cnv = shape.cnv()
+        cnm = shape.cnm()
+        cmw = shape.cmw()
         A = cnn[0,0]
         model.section("ElasticFrame", sec,
                         E=E,
@@ -66,12 +68,19 @@ def create_cantilever(aspect,
                         Sz=-cmw[2,0]
         )
     else:
+
+
         model.section("ShearFiber", 1, GJ=0)
+
+
         for fiber in shape.create_fibers():
+
             model.fiber(**fiber, material=mat, section=1)
 
 
+
     model.geomTransf("Linear", 1, (0,0,1))
+
 
     for i,x in enumerate(np.linspace(0, L, nn)):
         model.node(i, (x,0,0))
@@ -79,7 +88,7 @@ def create_cantilever(aspect,
     for i in range(ne):
         start = i * (nen - 1)
         nodes = list(range(start, start + nen))
-        model.element(element, i+1, nodes, section=sec, transform=1, shear=1)
+        model.element(element, i+1, nodes, section=1, transform=1, shear=1)
 
     wi = int(case in "cb")
     wj = int(case in "c")
@@ -123,6 +132,9 @@ if __name__ == "__main__":
                 b  = depth*0.4,
                 mesh_scale=1/200
             )
+
+
+
 
     print(shape.summary())
 
@@ -183,7 +195,7 @@ if __name__ == "__main__":
             P.append(model.getTime())
             if model.analyze(1) != 0:
                 print(f"Failed at time = {model.getTime()}")
-                break 
+                break
 
         model.reactions()
 
@@ -206,14 +218,14 @@ if __name__ == "__main__":
 
         xs = [(x+model.nodeCoord(model.eleNodes(tag)[0], 1))/L for tag in model.getEleTags() for x in model.eleResponse(tag, "integrationPoints")]
         ws = [
-            model.eleResponse(tag, "section", i+1, "resultant")[6]/(Mmax*L) 
-            for tag in model.getEleTags() 
+            model.eleResponse(tag, "section", i+1, "resultant")[6]/(Mmax*L)
+            for tag in model.getEleTags()
             for i in range(len(model.eleResponse(tag, "integrationPoints")))
         ]
         ax4.plot(xs, ws, "-", color=color, label=case)
         vs = [
             model.eleResponse(tag, "section", i+1, "resultant")[9]/Mmax
-            for tag in model.getEleTags() 
+            for tag in model.getEleTags()
             for i in range(len(model.eleResponse(tag, "integrationPoints")))
         ]
         ax5.plot(xs, vs, "-", color=color)
@@ -244,6 +256,4 @@ if __name__ == "__main__":
     ax3.figure.savefig("img/e0011-kinematics.png")
     ax4.figure.savefig("img/e0011-resultants.png")
     plt.show()
-
-
 

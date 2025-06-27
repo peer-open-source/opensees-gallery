@@ -39,7 +39,7 @@ def create_cantilever(case="a", element="ExactFrame", section="Elastic"):
                 d  = 21.62,
                 b  = 8.42,
                 # saint_venant="linear"
-            ).create_shape()
+            )
 
     if section == "Elastic":
         cmm = shape.torsion.cmm()
@@ -66,9 +66,8 @@ def create_cantilever(case="a", element="ExactFrame", section="Elastic"):
         )
     else:
         model.section("ShearFiber", 1, GJ=0)
-        for fiber in shape.fibers():
-            y, z = fiber.location
-            model.fiber(y, z, fiber.area, warp=[fiber.warp[0], [0,0,0], [0,0,0]], material=mat, section=1)
+        for fiber in shape.create_fibers():
+            model.fiber(**fiber, material=mat, section=1)
 
 
     model.geomTransf("Linear", 1, (0,0,1))

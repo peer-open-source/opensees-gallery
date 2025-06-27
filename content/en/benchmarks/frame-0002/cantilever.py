@@ -3,7 +3,7 @@ import xara
 import xara.units.iks as units
 import veux
 import os
-from xsection.library import from_aisc
+from xsection.library import from_aisc, Rectangle
 import numpy as np
 
 def create_cantilever(shape, length, element, material,
@@ -70,16 +70,19 @@ def analyze(model, P):
     model.pattern("Plain", 1, "Linear", load={nn-1: [0,0,1, 0,0,0]})
     model.integrator("LoadControl", P)
     model.analysis("Static")#, pattern=1, integrator=1)
+    model.test("Residual", 1e-10, 3)
 
-    model.analyze(1)
+    assert model.analyze(1) == 0
 
 
 
 
 if __name__ == "__main__":
-    shape = from_aisc("W14x48", units=units)
+#   shape = Rectangle(d=14, b=10, mesh_scale=1/100) #
+    shape = from_aisc("W14x48", units=units, mesh_scale=1/100)
+
     E  = 29e3*units.ksi
-    G  = 11.2e3*units.ksi * 4/5
+    G  = 11.2e3*units.ksi # * 4/5
 
     A  = shape.cnn()[0,0]
     GA = A*G
@@ -90,10 +93,10 @@ if __name__ == "__main__":
         model = create_cantilever(shape,
                                 length=L,
                                 material={"name": "ElasticIsotropic", "E": E, "G": G},
-                                element=os.environ.get("Element", "ForceFrame"), 
-                                section="ShearFiber", 
+                                element=os.environ.get("Element", "ForceFrame"),
+                                section="ShearFiber",
                                 shear=shear,
-                                ne=6, 
+                                ne=1,
                                 nen=2
                 )
 
@@ -105,9 +108,9 @@ if __name__ == "__main__":
         u_euler = P*L**3/(3*EI)
         u_shear = P*L/GA * shear
 
-        print(f"Uz = {uz:.3f}, Uz theory = {u_euler+u_shear:.3f} ({u_euler:.3f} + {u_shear:.6f})")
+        print(f"Uz = {uz:.6f}, Uz theory = {u_euler+u_shear:.6f} ({u_euler:.6f} + {u_shear:.6f})")
 
-        model.eval(f"verify value [nodeDisp {end} 3] {u_euler+u_shear:.6f} 1e-4")
+        model.eval(f"verify value [nodeDisp {end} 3] {u_euler+u_shear:.12f} 1e-6")
 
     # a = veux.create_artist(model)
     # a.draw_sections()
