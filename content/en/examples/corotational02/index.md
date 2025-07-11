@@ -3,11 +3,21 @@ title: Corotational02
 description: This page develops 5 examples that demonstrate improvements of the Corotational02 transformation over the existing CrdTransf classes in OpenSees.
 downloads:
   Download:
-  - Test01-Force-Geom01.tcl
-  - Test01-Force-Geom02.tcl
-  - Test01-Prism-Geom01.tcl
-  - Test01-Prism-Geom02.tcl
+  - 01/main.py
+  - 01/Test01-Force-Geom01.tcl
+  - 01/Test01-Force-Geom02.tcl
+  - 01/Test01-Prism-Geom01.tcl
+  - 01/Test01-Prism-Geom02.tcl
 ---
+
+
+To install the required dependencies create a virtual environment and run:
+
+```shell
+python -m pip install -Ur requirements.txt
+```
+
+All tests can be run in a Posix shell by sourcing the script `test.sh`.
 
 ## Test 01 Objectivity and Self-Stressing
 
@@ -76,20 +86,23 @@ The following variants are investigated:
  </dl>
 
 ## Test 04 - Reliability under large rotations
+
 <img src="04/image.png">
 
-## Test 05- Computational efficiency
+## Test 05 - Computational efficiency
 
 ## Test 06
+
 This example demonstrates the use of the Corotational02 transformation to represent a shear-deformable cantilever.
 The setup is that of Section 4.2.2 from Perez and Filippou (2024).
- <dl>
+
+<dl>
  <dt><code>Test06-Prism-Geom01</code></dt>
- <dd>This is the formulation that is currently available in OpenSees as the <code>Corotational</code> transformation.
-     It can be executed with both the <code>OpenSees</code> executable, and the <code>xara</code> executable.
+ <dd>This is the formulation that is currently available in OpenSees as the <code>Corotational</code> transformation. 
+  It can be executed with both the <code>OpenSees</code> executable, and the <code>xara</code> executable.
  </dd>
  <dt><code>Test06-Prism-Geom02</code></dt>
  <dd>
  </dd>
- </dl>
+</dl>
 
