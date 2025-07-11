@@ -41,13 +41,8 @@ def create_prism(length:    float,
     #
     # Define cross-section 
     #
-    sec_tag = 1
-    properties = []
-    for k,v in section.items():
-        properties.append("-" + k)
-        properties.append(v)
 
-    model.section("FrameElastic", sec_tag, *properties)
+    model.section("FrameElastic", 1, **section)
 
     # Define geometric transformation
     geo_tag = 1
@@ -55,15 +50,15 @@ def create_prism(length:    float,
     if rotation is not None:
         orient = tuple(map(float, rotation@orient))
 
-    model.geomTransf(transform, geo_tag, *orient)
+    model.geomTransf(transform, 1, *orient)
 
 
     # Define elements
     for i in range(1, ne+1):
         model.element(element, i, (i, i+1),
-                    section=sec_tag,
+                    section=1,
                     shear=1,
-                    transform=geo_tag)
+                    transform=1)
 
 
     model.pattern("Plain", 1, "Linear", load={
@@ -137,14 +132,15 @@ def create_prism_openseespy(length: float,
 
 
 def analyze_moment(model, steps=1):
+#   model.printModel("-JSON", "-file", "/dev/stdout")
     tip = model.getNodeTags()[-1]
     model.system("BandGen")
-    model.test("EnergyIncr", 1e-10, 10, 1)
+    model.test("EnergyIncr", 1e-10, 10, 0)
     model.integrator("DisplacementControl", tip, 2, 0.1)
     model.analysis("Static")
 
 
-    artist = veux.create_artist(model)
+    artist = veux.create_artist(model, model_config={"extrude_outline": "square"})
     artist.draw_axes()
     artist.draw_outlines()
     motion = Motion(artist)
@@ -156,7 +152,7 @@ def analyze_moment(model, steps=1):
             break
 
         motion.draw_sections(position=model.nodeDisp,
-                             rotation=getattr(model, "nodeRotation", lambda i: [0,0,0,1]))
+                             rotation=getattr(model, "nodeRotation", lambda i:  [0,0,0,1]))
         
         motion.advance(time=i/10)
         u.append(np.linalg.norm(model.nodeDisp(tip,4))/length)
@@ -170,6 +166,8 @@ if __name__ == "__main__":
     E  = 10000
     I  = 200.0
     length = 100
+
+
     model = create_prism_openseespy(
         length = length,
         section = dict(
@@ -184,8 +182,6 @@ if __name__ == "__main__":
         boundary = ((1,1,1,  1,1,1),
                     (0,0,0,  0,0,0)),
         divisions=3,
-#       transform="Corotational",
-#       element="PrismFrame"
     )
 
     m,u,artist = analyze_moment(model, steps=200)
@@ -194,8 +190,37 @@ if __name__ == "__main__":
         print(f"Node {node}: {np.linalg.norm(m.nodeDisp(node))}")
 
     
-#   veux.serve(artist)
+    veux.serve(artist)
     artist.save("a.glb")
     plt.plot(u,'.')
     plt.show()
 
+
+    model = create_prism(
+        length = length,
+        section = dict(
+            E   = E,
+            G   = E/2.0,
+            A   = 20.0,
+            J   = 20.0,
+            Iy  = I,
+            Iz  = I,
+            Ay  = 20.0,
+            Az  = 20.0),
+        boundary = ((1,1,1,  1,1,1),
+                    (0,0,0,  0,0,0)),
+        divisions=3,
+        transform="Corotational02",
+        element="PrismFrame"
+    )
+
+    m,u,artist = analyze_moment(model, steps=200)
+    
+    for node in m.getNodeTags():
+        print(f"Node {node}: {np.linalg.norm(m.nodeDisp(node))}")
+
+    
+    veux.serve(artist)
+    artist.save("a.glb")
+    plt.plot(u,'.')
+    plt.show()
