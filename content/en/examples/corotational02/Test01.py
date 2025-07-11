@@ -136,11 +136,11 @@ def create_prism_openseespy(length: float,
     return model
 
 
-def analyze_moment(model, steps=1, ne=5):
-
+def analyze_moment(model, steps=1):
+    tip = model.getNodeTags()[-1]
     model.system("BandGen")
     model.test("EnergyIncr", 1e-10, 10, 1)
-    model.integrator("DisplacementControl", ne+1, 2, 0.1)
+    model.integrator("DisplacementControl", tip, 2, 0.1)
     model.analysis("Static")
 
 
@@ -159,7 +159,7 @@ def analyze_moment(model, steps=1, ne=5):
                              rotation=getattr(model, "nodeRotation", None))
         
         motion.advance(time=i/10)
-        u.append(np.linalg.norm(model.nodeDisp(ne+1,4))/length)
+        u.append(np.linalg.norm(model.nodeDisp(tip,4))/length)
 
     motion.add_to(artist.canvas)
     return model,u,artist
