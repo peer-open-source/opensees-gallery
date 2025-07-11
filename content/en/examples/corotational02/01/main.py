@@ -1,7 +1,24 @@
-
+#
+# An example demonstrating spurious straining/displacement in the
+# corotational formulation of OpenSees.
+#
+# A cantilever is oriented arbitrarily in space and discretized by
+# 3 finite elements. An empty nodal load is applied at the tip
+# and 200 steps of displacement control are performed.
+#
+# To install the script dependencies run the following in 
+# an isolated virtual environment:
+# 
+# python -m pip install -U xara veux opensees openseespy numpy matplotlib
+#
+# The only constraint on the Python version is that imposed for
+# openseespy.
+#
 import veux
 import xara
 import numpy as np
+import openseespy.opensees as ops
+
 import matplotlib.pyplot as plt
 from veux.motion import Motion
 
@@ -81,7 +98,6 @@ def create_prism_openseespy(length: float,
 
     nn = ne + 1
 
-    import openseespy.opensees as ops
     model = ops 
     model.model("Basic", "-ndm", 3, "-ndf", 6)
 
@@ -132,7 +148,6 @@ def create_prism_openseespy(length: float,
 
 
 def analyze_moment(model, steps=1):
-#   model.printModel("-JSON", "-file", "/dev/stdout")
     tip = model.getNodeTags()[-1]
     model.system("BandGen")
     model.test("EnergyIncr", 1e-10, 10, 0)
