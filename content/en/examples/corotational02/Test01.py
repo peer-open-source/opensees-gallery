@@ -88,7 +88,7 @@ def create_prism_openseespy(length: float,
 
     import openseespy.opensees as ops
     model = ops 
-    model.model("-ndm", 3, "-ndf", 6)
+    model.model("Basic", "-ndm", 3, "-ndf", 6)
 
     for i in range(1, nn+1):
         x = (i-1)/float(ne)*L
@@ -156,7 +156,7 @@ def analyze_moment(model, steps=1):
             break
 
         motion.draw_sections(position=model.nodeDisp,
-                             rotation=getattr(model, "nodeRotation", None))
+                             rotation=getattr(model, "nodeRotation", lambda i: [0,0,0,1]))
         
         motion.advance(time=i/10)
         u.append(np.linalg.norm(model.nodeDisp(tip,4))/length)
@@ -170,7 +170,7 @@ if __name__ == "__main__":
     E  = 10000
     I  = 200.0
     length = 100
-    model = create_prism(
+    model = create_prism_openseespy(
         length = length,
         section = dict(
             E   = E,
@@ -184,8 +184,8 @@ if __name__ == "__main__":
         boundary = ((1,1,1,  1,1,1),
                     (0,0,0,  0,0,0)),
         divisions=3,
-        transform="Corotational",
-        element="PrismFrame"
+#       transform="Corotational",
+#       element="PrismFrame"
     )
 
     m,u,artist = analyze_moment(model, steps=200)
@@ -194,7 +194,8 @@ if __name__ == "__main__":
         print(f"Node {node}: {np.linalg.norm(m.nodeDisp(node))}")
 
     
-    veux.serve(artist)
+#   veux.serve(artist)
+    artist.save("a.glb")
     plt.plot(u,'.')
     plt.show()
 
