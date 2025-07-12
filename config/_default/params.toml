@@ -1,6 +1,6 @@
 [main]
     separator = "-"
-    description = "A gallery of technical examples currated by the STAIRLab at UC Berkeley."
+    description = "A gallery of technical examples using OpenSees."
     enableDarkMode = true
     enableLanguageSelectionStorage = false
     modes = ["light", "dark"]
@@ -24,8 +24,8 @@
 # toml-docs-start version
 [docs]
     basePath = "_vendor/github.com/gethinode/hinode"
-    github = "https://github.com/STAIRlab/gallery"
-    release = "https://github.com/claudioperez/OpenSeesRT/releases/tag/"
+    github = "https://github.com/peer-open-source/opensees-gallery/"
+    release = "https://github.com/peer-open-source/xara/releases/tag/"
 # toml-docs-end version
 
 [home]

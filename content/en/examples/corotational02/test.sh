@@ -19,14 +19,14 @@ END
 done
 
 
-cat <<END
-
-----------------
-Test 5
-----------------
-END
-time (repeat 10 { OpenSees Test05-Force-Geom01.tcl -noHeader 2>/dev/null; } )
-time (repeat 10 { xara     Test05-Force-Geom01.tcl; } )
-time (repeat 10 { xara     Test05-Force-Geom02.tcl; } )
-time (repeat 10 { Crisfield=1 xara     Test05-Force-Geom02.tcl; } )
+# cat <<END
+# 
+# ----------------
+# Test 5
+# ----------------
+# END
+# time (repeat 10 { OpenSees Test05-Force-Geom01.tcl -noHeader 2>/dev/null; } )
+# time (repeat 10 { xara     Test05-Force-Geom01.tcl; } )
+# time (repeat 10 { xara     Test05-Force-Geom02.tcl; } )
+# time (repeat 10 { Crisfield=1 xara     Test05-Force-Geom02.tcl; } )
 

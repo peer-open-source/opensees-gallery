@@ -1,11 +1,11 @@
-title = "STAIRLab"
-copyright = "© 2025 <a href='https://github.com/stairlab' class='link-bg-footer' target='_blank' rel='noopener noreferrer'>PEER</a>"
+title = "PEER"
+copyright = "© 2025 <a href='https://github.com/peer-open-source/' class='link-bg-footer' target='_blank' rel='noopener noreferrer'>PEER</a>"
 enableGitInfo = true
 
 # additional settings
 baseURL = "https://gallery.stairlab.io/"
-canonifyURLs = true
-relativeURLs = false
+#canonifyURLs = true
+#relativeURLs = false
 # disableKinds = ["taxonomy", "term"]
 enableEmoji = true
 enableRobotsTXT = true
