@@ -69,11 +69,17 @@ which furnishes a tip displacement $\mathbf{e}_1 \cdot \boldsymbol{x}(L) = -1$.
 
 #### Outcome
 
+|   |   |
+|---|---|
+| `Corotational`   | -1.05208167300369859198
+| `Corotational02` | -1.000000000000076 |
+
 ## 3) Convergence with Bathe's Cantilever
 
 This example demonstrates the convergence characteristics of the new corotational transformations.
 The standard problem of a curved 45-degree cantilever is implemented.
 The following variants are investigated:
+
 <dl>
  <dt><code>Test02-Geom01</code></dt>
  <dd>
@@ -91,7 +97,7 @@ The following variants are investigated:
 
 ## 5) Computational efficiency
 
-## Test 06
+## 6) Shear deformations
 
 This example demonstrates the use of the Corotational02 transformation to represent a shear-deformable cantilever.
 The setup is that of Section 4.2.2 from Perez and Filippou (2024).
