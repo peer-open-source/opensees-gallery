@@ -21,7 +21,7 @@ All tests can be run in a Posix shell by sourcing the script `test.sh`.
 
 ## Test 01 Objectivity and Self-Stressing
 
-<img src="Test01.gif">
+<img src="01/Test01.gif">
 
 This example demonstrates a severe bug in the existing corotational formulation.
 

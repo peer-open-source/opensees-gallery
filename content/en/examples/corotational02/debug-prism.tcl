@@ -39,7 +39,7 @@ constraints Plain
 numberer RCM
 system BandGen
 algorithm Newton
-analysis  Static 
+analysis Static 
 analyze 5
 
 puts "Iterations: [numIter]"
