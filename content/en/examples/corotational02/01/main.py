@@ -204,7 +204,7 @@ if __name__ == "__main__":
     for node in m.getNodeTags():
         print(f"Node {node}: {np.linalg.norm(m.nodeDisp(node))}")
 
-    
+
     veux.serve(artist)
     artist.save("a.glb")
     plt.plot(u,'.')
@@ -230,11 +230,11 @@ if __name__ == "__main__":
     )
 
     m,u,artist = analyze_moment(model, steps=200)
-    
+
     for node in m.getNodeTags():
         print(f"Node {node}: {np.linalg.norm(m.nodeDisp(node))}")
 
-    
+
     veux.serve(artist)
     artist.save("a.glb")
     plt.plot(u,'.')
