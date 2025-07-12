@@ -19,22 +19,22 @@ python -m pip install -Ur requirements.txt
 
 All tests can be run in a Posix shell by sourcing the script `test.sh`.
 
-## Test 01 Objectivity and Self-Stressing
+## 1) Objectivity and Self-Stressing
 
 <img src="01/Test01.gif">
 
 This example demonstrates a severe bug in the existing corotational formulation.
 
-### Setup
+#### Setup
 
 A cantilever is discretized by 8 beam elements. No loading is applied. 
 Two methods of static analysis are considered: load and displacement control.
 
-### Expectation
+#### Expectation
 
 Because no loading is applied, both methods of analysis should not produce any displacement.
 
-### Outcome
+#### Outcome
 
 The original corotational formulation gives rise to non-zero nodal displacements,
 and therefore fails the experiment. The severity of the problem is particularly
@@ -42,17 +42,17 @@ clear in the case of displacement control, where after 200 steps a drift over 10
 
 When `Corotational02` is used, the displacements remain at exactly 0 at all nodes, in all DOFs.
 
-## Test 02 - Accuracy in pure flexure
+## 2) Accuracy in pure flexure
 
 <img src="02/image.png">
 
-### Setup
+#### Setup
 
 This problem furnishes one of the few known closed form solutions of a beam undergoing finite rotations.
 A cantilever oriented along the $\mathbf{e}_1$ coordinate basis is subjected to a concentrated moment at its tip with magnitude $\lambda \pi 2 EI/L \mathbf{e}_3$.
 A discretization of 5 finite elements is employed and the load factor $\lambda$ is scaled linearly from $0$ to $1$ in 5 increments.
 
-### Expectation
+#### Expectation
 
 
 The analytic solution of the geometrically exact boundary value problem is given by: 
@@ -67,9 +67,9 @@ $$\left\{
 $$
 which furnishes a tip displacement $\mathbf{e}_1 \cdot \boldsymbol{x}(L) = -1$.
 
-### Outcome
+#### Outcome
 
-## Test 03 - Convergence with Bathe's Cantilever
+## 3) Convergence with Bathe's Cantilever
 
 This example demonstrates the convergence characteristics of the new corotational transformations.
 The standard problem of a curved 45-degree cantilever is implemented.
@@ -85,11 +85,11 @@ The following variants are investigated:
  </dd>
  </dl>
 
-## Test 04 - Reliability under large rotations
+## 4) Reliability under large rotations
 
 <img src="04/image.png">
 
-## Test 05 - Computational efficiency
+## 5) Computational efficiency
 
 ## Test 06
 
